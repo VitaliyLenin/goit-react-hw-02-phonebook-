@@ -18,9 +18,7 @@ const MyContactList = ({ contacts, removeContact }) => {
 
   return (
     <div className={css.contacts_wrapper}>
-      <ul>
-        <li className={css.contact_item}> {names}</li>
-      </ul>
+      <ul className={css.contact_items}>{names}</ul>
     </div>
   );
 };
