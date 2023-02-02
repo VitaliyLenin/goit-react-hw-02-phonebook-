@@ -79,7 +79,10 @@ class MyContacts extends Component {
       <div>
         <h2 className={css.title}>Phonebook</h2>
         <MyContactForm onSubmit={addContact} />
-        <MyContactsFilter handleChange={handleFilter} />
+        <MyContactsFilter
+          handleChange={handleFilter}
+          value={this.state.filter}
+        />
         <h2 className={css.title}>Contacts</h2>
         <MyContactList removeContact={removeContact} contacts={contacts} />
       </div>
